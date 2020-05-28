@@ -95,7 +95,7 @@ class DetailTask extends Component {
                     <h3 className ='card-title'>{this.state.task.name}</h3>
                     <p className='card-text'>{this.state.task.description}</p>
                     <div style={{margin: 0, padding: 5}} >{this.state.download? <button className='btn btn-primary' onClick={()=>{this.revokeBooking(this.state.task.id)}}> Revoke Booking </button> : <button className='btn btn-primary' onClick={()=>{this.booking(this.state.task.id)}}> Booking </button> }</div>
-                    <div>{this.state.download? <a href={`https://konvergen-api.herokuapp.com/task/downloadDataset/${this.state.task.dataset}`} download>Click to download</a> : <a>booking first before download dataset</a>} </div>
+                    <div>{this.state.download? <a href={this.state.task.dataset} download>Click to download</a> : <a>booking first before download dataset</a>} </div>
                 </div>
             </div>
         )

@@ -22,6 +22,11 @@ class Item extends Component {
     getTasks = () => {
         axios.get('task/alltask', {
             headers: {
+                'Authorization': `Bearer`
+            }
+        })
+        axios.get('task/alltask', {
+            headers: {
                 'Authorization': `Bearer ${cookie.get('token')}`
             }
         })

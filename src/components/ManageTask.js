@@ -150,7 +150,7 @@ class ManageTask extends Component {
                     <td>{item.name}</td>
                     <td>{item.description}</td>
                     
-                    <td>{item.dataset}</td>
+                    <td><a href={item.dataset} download>{`${item.name}.zip`}</a></td>
                     <td></td>
                     <td>
                         <button className = 'btn btn-primary' onClick={() => {

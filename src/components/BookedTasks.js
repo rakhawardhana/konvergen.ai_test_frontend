@@ -39,7 +39,7 @@ class BookedTasks extends Component {
                     <div className='card-body'>
                         <h5 className='card-title'> {item.name}</h5>
                         <p className='card-text'> {item.description}</p>
-                        <a href={`https://konvergen-api.herokuapp.com/task/downloadDataset/${item.dataset}`} download>Click to download</a>
+                        <a href={item.dataset} download>Click to download</a>
                     </div>
                 </div>
            )
