@@ -93,12 +93,11 @@ class ManageTask extends Component {
 
     delete = (id) => {
         axios.patch(
-            'task/disableTask/' + id, {
+            'task/disableTask/' + id, null, {
                 headers: {
                     'Authorization': `Bearer ${cookie.get('token')}`
                 }
-            }
-        ).then (res => {
+            }).then (res => {
             console.log(res.data)
             document.location.reload(true)
 
