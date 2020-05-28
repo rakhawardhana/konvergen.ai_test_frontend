@@ -1,10 +1,30 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to Use The App
+
+### As Admin
+* First click register then register then click login
+* Click manage tasks then you can add, edit, delete tasks, and upload dataset
+* Click all tasks, then click detail for booking the task, click booking and you can download the dataset.
+* You can revoke the booking
+* You can create annotator by clicking create annotator and manage the annotator to add, change password, and soft delete the annotator
+
+### As Annotator
+* Login as annotator
+* You can click task detail then you can book the task
+* After booking the task, click "Check you booked tasks" and you can download the dataset
+* You cannot register as an annotator since an annotator can only be created by an admin
+* All of the datasets that have been booked by admin is not available for annotator. Admin must revoke the booking for that dataset
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn` or `npm install`
+
+To install the necessary packages
+
+### `yarn start` or `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -17,7 +37,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `yarn build` or `npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
